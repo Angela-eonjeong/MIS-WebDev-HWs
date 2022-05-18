@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="sp22KimAngelaEonjeongHW4" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^/Users/eonjeongkim/Library/Mobile\ Documents/com~apple~CloudDocs/Exchange\ Student/Class\ Material/web\ programming/HW4/Kim_Angela_Eonjeong_HW4/Kim_Angela_Eonjeong_HW4/obj/Release/net5\.0/PubTmp/Out/$" />
+  </parameter>
+</parameters>

@@ -1,0 +1,60 @@
+@model Kim_Angela_Eonjeong_HW2.Models.WalkupOrder
+
+@{
+    ViewData["Title"] = "WalkupTotals";
+}
+
+<h1>Walkup Totals</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <div>
+            @Html.DisplayNameFor(model => model.CustomerName)
+            @Html.DisplayFor(model => model.CustomerName)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.OrderCustomerType)
+            @Html.DisplayFor(model => model.OrderCustomerType)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.NumberOFBurgers)
+            @Html.DisplayFor(model => model.NumberOFBurgers)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.NumberOFTacos)
+            @Html.DisplayFor(model => model.NumberOFTacos)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.TotalItems)
+            @Html.DisplayFor(model => model.TotalItems)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.BurgerSubtotal)
+            @Html.DisplayFor(model => model.BurgerSubtotal)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.TacoSubtotal)
+            @Html.DisplayFor(model => model.TacoSubtotal)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.Subtotal)
+            @Html.DisplayFor(model => model.Subtotal)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.SalesTax)
+            @Html.DisplayFor(model => model.SalesTax)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.Total)
+            @Html.DisplayFor(model => model.Total)
+        </div>
+
+    </div>
+</div>
+
+<br />
+<div>
+    <a asp-action="Index"> Home</a>
+</div>
+

@@ -1,0 +1,70 @@
+@model Kim_Angela_Eonjeong_HW3.Models.SearchViewModel
+@using Kim_Angela_Eonjeong_HW3.Controllers
+
+
+@{ ViewData["Title"] = "DetailedSearch"; }
+
+<h1>DetailedSearch</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="SearchResults" method="get">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label">Search by Title: </label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label">Search by Description: </label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SearchRating" class="control-label">Search by Rating: </label>
+                <select asp-for="SearchRating" asp-items="Html.GetEnumSelectList<Rating>()" class="form-control">
+                    <option selected="selected" value="">All Ratings</option>
+                </select>
+                <span asp-validation-for="SearchRating" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Genre" class="control-label">Search by Genre: </label>
+                @Html.DropDownList("Genre", (SelectList)ViewBag.AllGenres,
+                                             new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SelectedUserRating" class="control-label">Search by User Rating: </label>
+                <input asp-for="SelectedUserRating" type="number" step="0.1" class="form-control" />
+                <span asp-validation-for="SelectedUserRating" class="text-danger"></span>
+            </div>
+
+      
+            <div class="form-group">
+                <label> Type of Search: </label>
+                <label class="radio">@Html.RadioButton("SelectedOpt", DisplayMovies.Greater, true) Greater than </label>
+                <label class="radio">@Html.RadioButton("SelectedOpt", DisplayMovies.Less) Less than </label>
+
+                <span asp-validation-for="SelectedUserRating" class="text-danger"></span>
+            </div>
+
+
+
+    <div class="form-group">
+        <label asp-for="SearchReleaseDate" class="control-label">Search by Published Date: </label>
+        <input asp-for="SearchReleaseDate" class="form-control" />
+        <span asp-validation-for="SearchReleaseDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+    </form>
+</div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{DAC9A441-C1AA-4985-8181-AC786BBC351B}|Default">
+  <MonoDevelop.Ide.ItemProperties.Kim__Angela__Eonjeong__HW2 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/_ViewImports.cshtml">
+    <Files>
+      <File FileName="Views/.DS_Store" Line="1" Column="1" />
+      <File FileName="Views/_ViewImports.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="Kim_Angela_Eonjeong_HW2" expanded="True">
+            <Node name="Kim_Angela_Eonjeong_HW2" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="_ViewImports.cshtml" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
